@@ -23,6 +23,7 @@ final darkTheme = ThemeData(
   primaryColor: Color(0xFF141517),
   brightness: Brightness.dark,
   backgroundColor: Color(0xFF17191f),
+  //backgroundColor: Color(0x3b3b3b),
   unselectedWidgetColor: Color(0xFF323232),
   accentColor: Colors.white,
   accentIconTheme: IconThemeData(color: Colors.black),

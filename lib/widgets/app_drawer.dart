@@ -155,7 +155,7 @@ class _AppDrawerState extends State<AppDrawer> {
                         alignment: Alignment.bottomCenter,
                         child: ListTile(
                           trailing: Text(
-                            'Wersja 0.1',
+                            'Wersja Alfa 0.1',
                             style: TextStyle(fontSize: 10),
                           ),
                         ),

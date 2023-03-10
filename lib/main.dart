@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hejto_app/screens/welcome/welcome_screen.dart';
 import 'package:provider/provider.dart';
 import '../screens/home_screen.dart';
 import 'providers/theme.dart';
@@ -37,6 +38,7 @@ class _ThemeWidgetState extends State<ThemeWidget> {
       title: 'Hejto APP',
       theme: themeNotifier.getThemeData,
       home: HomeScreen(),
+      // home: WelcomeScreen(),
     );
   }
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hejto_app/screens/welcome/welcome_screen.dart';
 import '/widgets/bottom_navigation.dart';
 import '../widgets/app_drawer.dart';
+import 'welcome/welcome_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -36,13 +38,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
             tabs: [
               Tab(
-                text: 'Sztosy',
+                text: 'Docenione',
               ),
               Tab(
                 text: 'Najnowsze',
               ),
               Tab(
-                text: 'Docenione',
+                text: 'Obserwowane',
               ),
             ],
           ),
@@ -67,7 +69,18 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Container(
               child: Center(
-                child: Text("Tu bedą sztosy"),
+                child: TextButton(
+                  style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all(Colors.blue),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => WelcomeScreen()));
+                    //WelcomeScreen();
+                  },
+                  child: Text('Testowy welcome screen'),
+                ),
+                //Text("Tu bedą sztosy"),
               ),
             ),
             Container(
